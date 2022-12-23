@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main1{
+    width: 100vw;
+}
+.shop_info{
+    margin-top: 20px;
+    background-color: rgb(28, 26, 26);
+    height:200px;
+    position: sticky;
+    z-index: 99;
+    top: 0px;
+}
+
+.sub_box{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(28, 26, 26);
+    flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+}
+
+
+.sq1{
+    width: auto;
+}
+.subsq1  {
+    height: 150px;
+}
+.subsq1 img {
+    height: inherit;
+}
+
+.sq2{
+    padding: 20px;
+}
+
+.subsq2{
+    color: wheat;
+}
+
+.sub_box{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+    
+}
+
+
+
+
+/* menu box */
+
+.box1{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+.items , .cart{
+    margin-left: 40px;
+    width: 22%;
+    align-self: flex-start;
+    position: sticky;
+    top: 230px;
+}
+.items a div{
+    text-align: right;
+    padding-right: 10px;
+}
+.items a { 
+    /* width: 100%; */
+        text-decoration: none;
+    font-weight: 600;
+}
+
+.sub_box , .sq1 , .subsq1 , .sq2 , .subsq2 , .spName , .spIteam , .spName h1{
+    background-color: #1c1a19;
+}
+
+.sq2{
+    height: inherit;
+}
+
+.text{
+    font-weight: 600;
+    width: inherit;
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    padding: 30px  ;
+}
+
+.nameHading{
+    border-bottom: 2px solid black;
+}
+.same:first-child {
+    margin-top: 0px;
+}
+.same{
+    margin-top: 39px;
+    /* z-index: 10; */
+    
+}
+.nameHading .heading{
+padding: 20px 0px;
+}
+
+.itName{
+    width: 100%;
+    height: 100%;
+    border-left:1px solid rgb(194, 194, 194);
+    padding: 0px 29px;
+}
+.it{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    padding: 20px 0;
+}
+.itBig button{
+    width: 60px;
+}
+
+
+.cartbutton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cartbutton button{
+    width: 20%;
+    height: 30%;
+}
+.carttext1{
+    width: 100%;
+}
+.cartIt{
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+
+
+/* cart   */
+.cart{
+    width: 40%;
+   
+}
+.bb{
+    border: 3px solid red;
+    height: inherit;
+    width: 100%;
+        left: 6%;
+    padding: 30px;
+    height: 400px;
+        overflow-y: scroll;
+}
+.lowbtn{
+    width: 10%;
+}
+
+
+.cartButton{
+    display: none;
+}
+
+.warning{
+    color: red;
+    font-weight: bold;
+}
+
+.warn{
+
+}
+
+@media (max-width: 800px){
+
+    .shop_info{
+        height: 100px;
+    }
+    .sub_box{
+        height: 90px;
+    }
+    .subsq1 , .sq1{
+        height: inherit;
+    }
+    .it{
+        padding: 0;
+    }
+
+    .items , .cart{
+        display: none;
+    }
+    .itName{
+        border: none;
+    }
+    .box1{
+        display: block;
+        width: 100%;
+    }
+    .menu{
+        padding: 0;
+        width: inherit;
+    }
+    .sub_box{
+        width: 100%;
+    }
+    .subsq2 img{
+        height: inherit;
+    }
+
+    .cartButton{
+        display: block;
+            /* align-items: center; */
+            /* justify-content: center; */
+            position: fixed;
+            bottom: 4%;
+            width: 17%;
+            left: 40%;
+    }
+    .cartButton button{
+        width: 100%;
+            background-color: #1c1a19;
+            color: white;
+            border-radius: 10px;
+            outline: none;
+    }
+    .cart{
+        position: fixed;
+            overflow-y: scroll;
+        
+    }
+    .bb{
+        bottom: 10%;
+            position: fixed;
+            width: 89%;
+            margin: auto;
+            font-size: 10px;
+            overflow-y: scroll;
+    }
+    .warning{
+        display: none;
+    }
+}
